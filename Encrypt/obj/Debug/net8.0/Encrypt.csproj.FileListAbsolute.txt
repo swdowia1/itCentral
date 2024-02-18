@@ -1,0 +1,11 @@
+C:\dysk_d\projekty\ItCentral\Encrypt\bin\Debug\net8.0\Encrypt.deps.json
+C:\dysk_d\projekty\ItCentral\Encrypt\bin\Debug\net8.0\Encrypt.dll
+C:\dysk_d\projekty\ItCentral\Encrypt\bin\Debug\net8.0\Encrypt.pdb
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.GeneratedMSBuildEditorConfig.editorconfig
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.AssemblyInfoInputs.cache
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.AssemblyInfo.cs
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.csproj.CoreCompileInputs.cache
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.dll
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\refint\Encrypt.dll
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.pdb
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\ref\Encrypt.dll

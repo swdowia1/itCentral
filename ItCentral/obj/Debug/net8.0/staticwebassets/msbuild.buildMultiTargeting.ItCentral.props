@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ItCentral.props" />
+</Project>
