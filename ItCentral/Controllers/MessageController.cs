@@ -1,5 +1,6 @@
 ﻿using Encrypt;
 using ItCentral.Model;
+using ItCentral.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -10,23 +11,22 @@ namespace ItCentral.Controllers
     [ApiController]
     public class MessageController : ControllerBase
     {
-        private readonly ItCentralDataContext _dbContext;
-        string key = "abcd1234";
+        private readonly IMessageService _IMessageService;
 
-        public MessageController(ItCentralDataContext dbContext)
+        public MessageController(IMessageService iMessageService)
         {
-            _dbContext = dbContext;
+            _IMessageService = iMessageService;
         }
 
-        
         [HttpGet("{key}", Name = "GetMessage")]
         public async Task<IActionResult> GetMessage(string key)
         {
 
 
 
-            var s = _dbContext.Messages.FirstOrDefault(k => k.Key == key);
-            string result = Cipher.Decrypt(s.MessageValue, s.Key);
+           
+
+            string result = _IMessageService.GetMessage(key);
             return Ok(new MessageResult() { Info = "I'm teapot", Message = result });
         }
 

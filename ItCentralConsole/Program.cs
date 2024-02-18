@@ -3,6 +3,9 @@ using Encrypt;
 using System.Data;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using System.Security.Principal;
+using Newtonsoft.Json;
+
 var builder = new ConfigurationBuilder()
                  .AddJsonFile($"appsettings.json", true, true);
 var config = builder.Build();
@@ -11,27 +14,11 @@ var ApiUrl = config["apiurl"];
 string pol = config["ConnectionString"];
 
 string clientName = "";
-var client = new HttpClient();
-var request = new HttpRequestMessage
-{
-    Method = HttpMethod.Get,
-    RequestUri = new Uri("https://api.github.com/repos/swdowia1/itcentral"),
-    Headers =
-    {
-        { "user-agent", "vscode-restclient" },
-    },
-};
-using (var response = await client.SendAsync(request))
-{
-    response.EnsureSuccessStatusCode();
-    var body = await response.Content.ReadAsStringAsync();
-    Console.WriteLine(body);
-}
-return;
+
 
 if (args.Length == 0)
 {
-    clientName= "Random " + Cipher.Klucz;
+    clientName = "Random " + Cipher.Klucz;
     Console.Title = clientName;
 
 }
@@ -39,20 +26,14 @@ else
 {
     if (args[0].ToLower() == "o")
     {
-        using (var httpClient = new HttpClient())
-        {
-            var json = await httpClient.GetStringAsync("https://api.github.com/users/swdowia1");
-
-            // Now parse with JSON.Net
-        }
-        Console.WriteLine("opis aplikacj z github");
+        await OpisAplikacji();
         return;
     }
     else
     {
 
-        clientName= args[0]+"_" + Cipher.Klucz;
-     
+        clientName = args[0] + "_" + Cipher.Klucz;
+
         Console.Title = clientName;
 
 
@@ -61,13 +42,13 @@ else
 }
 while (true)
 {
-    Console.WriteLine( DateTime.Now.ToLongTimeString());
+    Console.WriteLine(DateTime.Now.ToLongTimeString());
     string KeyValue = Cipher.Klucz;
-    string dane = "ala ma kota "+clientName+" " + DateTime.Now.ToLongTimeString();
+    string dane = "ala ma kota " + clientName + " " + DateTime.Now.ToLongTimeString();
     string message = Cipher.Encrypt(dane, KeyValue);
     Console.WriteLine(KeyValue);
 
-    SendMessageCipher(KeyValue, message,pol);
+    SendMessageCipher(KeyValue, message, pol);
 
     var client1 = new HttpClient();
     var request1 = new HttpRequestMessage
@@ -88,7 +69,7 @@ while (true)
 
 
 
-static void SendMessageCipher(string KeyValue, string message,string pol)
+static void SendMessageCipher(string KeyValue, string message, string pol)
 {
     //string pol = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=sw1;Integrated Security=True;Connect Timeout=30;Encrypt=False";
 
@@ -105,5 +86,27 @@ static void SendMessageCipher(string KeyValue, string message,string pol)
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
         }
+    }
+}
+
+static async Task OpisAplikacji()
+{
+    var client = new HttpClient();
+    var request = new HttpRequestMessage
+    {
+        Method = HttpMethod.Get,
+        RequestUri = new Uri("https://api.github.com/repos/swdowia1/itcentral"),
+        Headers =
+    {
+        { "user-agent", "vscode-restclient" },
+    },
+    };
+    using (var response = await client.SendAsync(request))
+    {
+        response.EnsureSuccessStatusCode();
+        var body = await response.Content.ReadAsStringAsync();
+        DescribeApp describe = JsonConvert.DeserializeObject<DescribeApp>(body);
+        Console.WriteLine(JsonConvert.SerializeObject(describe, Formatting.Indented));
+       
     }
 }

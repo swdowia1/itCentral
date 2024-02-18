@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItCentral", "ItCentral\ItCe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encrypt", "Encrypt\Encrypt.csproj", "{96338B99-4EF8-4B30-A6D8-255A9A5E9D51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItCentralConsole", "ItCentralConsole\ItCentralConsole.csproj", "{91F38BDD-2F33-42B7-94C0-E0051EFD2989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItCentralConsole", "ItCentralConsole\ItCentralConsole.csproj", "{91F38BDD-2F33-42B7-94C0-E0051EFD2989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItCentralTesty", "ItCentralTesty\ItCentralTesty.csproj", "{29082DB4-DD6A-4E21-BE92-D69B9F5D465E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{91F38BDD-2F33-42B7-94C0-E0051EFD2989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F38BDD-2F33-42B7-94C0-E0051EFD2989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F38BDD-2F33-42B7-94C0-E0051EFD2989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29082DB4-DD6A-4E21-BE92-D69B9F5D465E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29082DB4-DD6A-4E21-BE92-D69B9F5D465E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29082DB4-DD6A-4E21-BE92-D69B9F5D465E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29082DB4-DD6A-4E21-BE92-D69B9F5D465E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
