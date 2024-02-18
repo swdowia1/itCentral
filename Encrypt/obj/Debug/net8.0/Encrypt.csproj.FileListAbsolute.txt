@@ -9,3 +9,4 @@ C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.dll
 C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\refint\Encrypt.dll
 C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.pdb
 C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\ref\Encrypt.dll
+C:\dysk_d\projekty\ItCentral\Encrypt\obj\Debug\net8.0\Encrypt.sourcelink.json
