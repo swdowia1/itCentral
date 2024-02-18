@@ -2,7 +2,19 @@
 using Encrypt;
 using System.Data;
 using System.Data.SqlClient;
+if (args.Length == 0)
+{
 
+    Console.Title = "Random " + Cipher.Klucz;
+
+}
+else
+{
+    if (args[0].ToLower() == "o")
+    {
+        Console.WriteLine("opis aplikacj z github");
+    }
+}
 
 string KeyValue = Cipher.Klucz;
 string dane = "ala ma kota "+DateTime.Now.ToLongTimeString();
