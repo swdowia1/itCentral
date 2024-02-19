@@ -12,6 +12,8 @@ Uruchomienie
 - Modyfikuje plik połączenie w pliku appsettings.json
 - Jeśli nie ma katalogu Migrations to wykonujemy polecenie dotnet ef migrations add InitialCreate
 - Poleceniem dotnet ef database update generujemy baze z tabelami
+  
+![baza](https://github.com/swdowia1/itCentral/assets/5527467/816a0897-29fc-4ae3-b1fc-b15f239f03ea)
 
 
 
