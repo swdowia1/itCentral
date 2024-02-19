@@ -22,7 +22,7 @@ namespace ItCentralTesty
            .Options;
 
             ItCentralDataContext db = new ItCentralDataContext(options);
-            string klucz = "abcd12345";
+            string klucz = "Test1";
             string wiadomosc = "ala ma kota";
             string szyfr= Cipher.Encrypt(wiadomosc, klucz); ;
 
@@ -48,7 +48,7 @@ namespace ItCentralTesty
            .Options;
 
             ItCentralDataContext db = new ItCentralDataContext(options);
-            string klucz = "abcd12345";
+            string klucz = "Test2";
             string wiadomosc = "panie janie panie janie";
             string szyfr = Cipher.Encrypt(wiadomosc, klucz); ;
 
