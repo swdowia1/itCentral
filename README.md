@@ -17,7 +17,7 @@ i ją odkodowuje
 
 ## Uruchomienie aplikacji web api
 
-- W katalogu ItCentral\ItCentral uruchamiamy polecenie **dotnet run**
+- W katalogu ItCentral\ItCentral uruchamiamy polecenie **dotnet run**\
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5167
 info: Microsoft.Hosting.Lifetime[0]
