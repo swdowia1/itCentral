@@ -1,5 +1,11 @@
 # ItCentral
-Wykonałem zadanie, poniżej przedstawiam krótki opis:
+Aplikacja sklada sie z dwóch cześci
+A- aplikacja konsolowa, szyfruje wiadomośc o tresci
+"ala ma kota " + argument aplikacji+losowy ciag + " " + DateTime.Now.ToLongTimeString();
+i umieszcza w bazie, apotem wywołuje web api aby wiadomość odkodować
+
+B- aplikacka web api, która na podstawie przesłanego klucza, wybiera z bazy zakodowaną wiadomość
+i ją odkodowuje
 
 
 - wygenerowałem model EF na podstawie przesłanej bazy danych
