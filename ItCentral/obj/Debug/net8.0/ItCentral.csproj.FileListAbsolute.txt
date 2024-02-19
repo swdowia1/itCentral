@@ -253,4 +253,4 @@ C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\
 C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.sourcelink.json
-C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.csproj.CopyComplete
+C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.csproj.Up2Date
