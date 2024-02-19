@@ -25,7 +25,6 @@ C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\staticwebassets\msbuild.
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ItCentral.props
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\staticwebassets.pack.json
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\scopedcss\bundle\ItCentral.styles.css
-C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.csproj.CopyComplete
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\refint\ItCentral.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.pdb
@@ -254,3 +253,4 @@ C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\
 C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.sourcelink.json
+C:\dysk_d\projekty\ItCentral\ItCentral\obj\Debug\net8.0\ItCentral.csproj.Up2Date
