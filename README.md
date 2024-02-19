@@ -29,7 +29,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 Możemy zweryfikować aplikacje. W onie przeglądarki wpisujemy adres **http://localhost:5167/swagger/index.html**
 
-Uruchomienie aplikacji Konsolowej
+## Uruchomienie aplikacji Konsolowej
 - Przechodzimy do katalogu ItCentral\ItCentralConsole\bin\Debug\net8.0
 - Modyfikujemy plik appsettings.json. Zmieniamy ConnectionString(ma być taki sam jak w pliku ItCentral\ItCentral\appsettings.json)
 - Uruchamiamy aplikacje z opcjami:\
