@@ -15,3 +15,4 @@ W szerszym zakresie
 
 Dodatkowo w ramach wsparcia pracy wykorzystałem
 - GitHub(historia zmian w projekcie) https://github.com/swdowia1/adw
+![itcentral1](https://github.com/swdowia1/itCentral/assets/5527467/a9b030f2-3f83-434e-87bd-c54499969cf3)
