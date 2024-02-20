@@ -10,14 +10,14 @@ i ją odkodowuje
 ## Generowanie bazy
 - Przechodzimy do katalogu ItCentral\ItCentral
 - Modyfikuje plik połączenie w pliku appsettings.json
-- Jeśli nie ma katalogu Migrations to wykonujemy polecenie dotnet ef migrations add InitialCreate
-- Poleceniem dotnet ef database update generujemy baze z tabelami
+- Jeśli nie ma katalogu Migrations to wykonujemy polecenie **dotnet ef migrations add InitialCreate**
+- Poleceniem **dotnet ef database update** generujemy baze z tabelami
   
 ![baza](https://github.com/swdowia1/itCentral/assets/5527467/816a0897-29fc-4ae3-b1fc-b15f239f03ea)
 
 ## Uruchomienie aplikacji web api
 
-- W katalogu ItCentral\ItCentral uruchamiamy polecenie dotnet run
+- W katalogu ItCentral\ItCentral uruchamiamy polecenie **dotnet run**\
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://localhost:5167
 info: Microsoft.Hosting.Lifetime[0]
@@ -27,9 +27,9 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\dysk_d\projekty\ItCentral\ItCentral
 
-Możemy zweryfikować aplikacje. W onie przeglądarki wpisujemy adres http://localhost:5167/swagger/index.html
+Możemy zweryfikować aplikacje. W onie przeglądarki wpisujemy adres **http://localhost:5167/swagger/index.html**
 
-Uruchomienie aplikacji Konsolowej
+## Uruchomienie aplikacji Konsolowej
 - Przechodzimy do katalogu ItCentral\ItCentralConsole\bin\Debug\net8.0
 - Modyfikujemy plik appsettings.json. Zmieniamy ConnectionString(ma być taki sam jak w pliku ItCentral\ItCentral\appsettings.json)
 - Uruchamiamy aplikacje z opcjami:\
@@ -39,6 +39,6 @@ ItCentralConsole.exe klient1: co 10 sekund aplikacja wysyła zaszyfrowany tekst 
 
 ## Testowanie(Unit test)
 - Przechodzimy do katalogu ItCentral\ItCentralTesty
-- Poleceniem dotnet test wywołany 2 unit testy aplikacji
+- Poleceniem **dotnet** test wywołany 2 unit testy aplikacji
 
 
