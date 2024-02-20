@@ -15,6 +15,10 @@ namespace ItCentral.Service
         public string GetMessage(string key)
         {
             var s = _dbContext.Messages.FirstOrDefault(k => k.Key == key);
+            if (s == null)
+            {
+                throw new KeyNotExistException("Brak klucza");
+            }
             string result = Cipher.Decrypt(s.MessageValue, s.Key);
             return result;
         }
